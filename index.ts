@@ -72,4 +72,10 @@ app.get('/me', (req, res) => {
   
 })
 
+app.get('/demo', (req, res) => {
+  return res.status(200).json({
+    message: 'This message is returned from demo route.'
+  })
+})
+
 app.listen(PORT, () => console.log(`Server is running at ${PORT}`))
